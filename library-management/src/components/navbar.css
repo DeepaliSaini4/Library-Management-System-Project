@@ -1,0 +1,118 @@
+/* navbar.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:ital,wght@0,600;1,500&display=swap');
+
+:root {
+    --primary: #ee7e34;  /* Dark grey */
+    --secondary: #6C63FF; /* Subtle blue-violet */
+    --accent: #FF6B6B;    /* Muted coral */
+    --background: #F8F9FA; /* Soft grey-white */
+    --glass: rgba(166, 223, 226, 0.5); /* Frosted glass */
+    --shadow: rgba(175, 52, 52, 0.1); /* Subtle shadow */
+  }
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 1.25rem 6%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 30px rgba(195, 27, 27, 0.1);
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+  }
+
+  
+  /* Navigation Links */
+  .nav-links {
+      display: flex;
+      gap: 2.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-links a {
+        position: relative;
+        color: var(--dark);
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        font-style: italic;
+    }
+    
+    .nav-links a:hover::after {
+        width: 100%;
+        transition: width 0.4s ease-in-out;
+    }
+    
+    .nav-links a:hover {
+        color: var(--secondary);
+    }
+    
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    /* Logo Section */
+    
+    .logo:hover {
+      transform: translateX(4px);
+    }
+    
+    .logo img {
+        width: 40px;
+      }
+    
+    .logo:hover img {
+      transform: rotate(-8deg) scale(1.05);
+    }
+
+/* CTA Button */
+.join-btn {
+    background: linear-gradient(45deg, var(--secondary), var(--accent));
+    color: var(--light);
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  }
+
+  .join-btn:hover {
+    transform: translateY(-2px);
+    letter-spacing: 0.5px;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 5%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-links a {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .join-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}

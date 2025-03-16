@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <div className="hero-container">
       <div className="hero-content">
-        <h1 className="hero-title">BookHive</h1>
+        <h1 className="hero-title">BOOKHIVE</h1>
         <p className="hero-description">
           Step into BookHive, the ultimate sanctuary for book lovers and knowledge seekers. 
           A seamless, beautifully crafted Library Management System that blends efficiency with elegance.

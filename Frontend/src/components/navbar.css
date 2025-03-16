@@ -93,9 +93,10 @@
 }
 
 .logo img {
-  width: 90px;
-  height: 69px;
-  display: block;
+  margin-top: 20px;
+  width: 140px;
+  height: 60px; 
+  rotate: 1deg;
 }
 
 /* Join button */

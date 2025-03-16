@@ -1,64 +1,72 @@
-.features-container {
-    text-align: center;
-    padding: 4rem 2rem;
-    background-color: white;
-  }
-  
-  .features-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-  }
-  
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .feature-card {
-    background-color: #f8f8f8;
-    padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .feature-image {
-    background-color: #d1d1d1;
-    height: 180px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-image::before {
-    content: "📷";
-    font-size: 2rem;
-    color: #666;
-  }
-  
-  .feature-card h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .feature-card p {
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .feature-link {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .feature-link:hover {
-    text-decoration: underline;
-  }
-  
+/* Full-screen section */
+.full-screen {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Move title higher up */
+.features-title {
+  font-size: 2.5rem; /* Slightly bigger */
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 25px;
+  margin-top: -30px; /* Move title up */
+  text-align: center;
+}
+
+/* Flexbox for card layout */
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between cards */
+  flex-wrap: nowrap; /* Keep all three in one row */
+  width: 100%;
+  max-width: 1200px; /* Slightly reduce max width */
+}
+
+/* Slightly larger feature card */
+.feature-card {
+  width: 30%; /* Adjust width */
+  min-width: 330px; /* Enough to fit in one row */
+  height: 360px; /* Slightly taller */
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Image size */
+.feature-image {
+  width: 100%;
+  height: 160px; /* Slightly bigger */
+  background: #ddd;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Style links */
+.feature-link {
+  color: #4a80f5;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.feature-link:hover {
+  text-decoration: underline;
+}

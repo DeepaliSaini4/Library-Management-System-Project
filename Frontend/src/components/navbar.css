@@ -35,6 +35,12 @@
   transition: all 0.2s ease;
   cursor: pointer;
   text-decoration: none; 
+  position: relative;
+}
+
+.nav-item:visited, .nav-item:link {
+  color: inherit; 
+  text-decoration: none;
 }
 
 .nav-item:hover {
@@ -44,10 +50,21 @@
 }
 
 .nav-item.active {
-  border-bottom: 2px solid #131313; 
+  position: relative;
 }
 
-/* Dropdown for Services */
+.nav-item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #131313;
+}
+
+
+
 .dropdown {
   position: relative;
 }

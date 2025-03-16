@@ -1,8 +1,14 @@
+import bgImage from "../assets/bg.jpg";
 import "./FeaturesSection.css";
 
 export default function FeaturesSection() {
   return (
-    <section className="features-container full-screen">
+    <section
+      id="features" 
+      className="features-container full-screen"
+      
+      style={{ backgroundImage: `url(${bgImage})` }}
+    >
       <div className="features-content">
         <div className="title-container">
           <h1 className="features-title">

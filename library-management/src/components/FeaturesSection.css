@@ -1,0 +1,64 @@
+.features-container {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: white;
+  }
+  
+  .features-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .feature-card {
+    background-color: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .feature-image {
+    background-color: #d1d1d1;
+    height: 180px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-image::before {
+    content: "📷";
+    font-size: 2rem;
+    color: #666;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-card p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-link {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .feature-link:hover {
+    text-decoration: underline;
+  }
+  

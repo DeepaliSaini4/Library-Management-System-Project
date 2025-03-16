@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
+import logo from "../assets/Logo.jpg";  
+
 
 const Navbar = () => {
   const [showServices, setShowServices] = useState(false);
@@ -36,7 +38,9 @@ const Navbar = () => {
         </div>
       </div>
       
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img src={logo} alt="Library Logo" />
+      </div>
       
       <div className="nav-right">
         <button className="join-btn">Join</button>

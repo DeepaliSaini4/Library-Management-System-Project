@@ -9,23 +9,22 @@
 
 .navbar {
   display: flex;
-  top:9%;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
+  background-color: #fefefe;
+  border: 1px solid #000000;
   width: 100%;
-  position: absolute;
-  margin-top: -17.188;
-  
+  position: fixed; 
+  top: 0; 
+  z-index: 1000; 
 }
 
-/* Left section with navigation links */
+
 .nav-links {
-  display:inline;
-  gap: 100px;
-  align-items: left;
+  display: flex;
+  gap: 50px;
+  align-items: center; 
 }
 
 .nav-item {
@@ -34,20 +33,23 @@
   font-weight: 400;
   padding: 10px 15px;
   transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none; 
 }
 
 .nav-item:hover {
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
+
 }
 
 .nav-item.active {
-  border: 1px solid #cccccc;
+  border-bottom: 2px solid #131313; 
 }
 
 /* Dropdown for Services */
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 
 .dropdown-content {
@@ -56,7 +58,7 @@
   background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-  z-index: 1;
+  z-index: 10;
   border: 1px solid #e0e0e0;
   top: 100%;
   left: 0;
@@ -71,7 +73,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #f8f8f8;
+  background-color: #ecec2c;
 }
 
 .dropdown:hover .dropdown-content {
@@ -86,6 +88,14 @@
   font-family: 'Brush Script MT', cursive;
   font-size: 32px;
   font-style: italic;
+  font-weight: bold;
+  white-space: nowrap; 
+}
+
+.logo img {
+  width: 90px;
+  height: 69px;
+  display: block;
 }
 
 /* Join button */
@@ -97,10 +107,11 @@
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 5px; 
 }
 
 .join-btn:hover {
-  background-color: #333333;
+  background-color: #928888;
 }
 
 /* Responsive styles */
@@ -111,9 +122,9 @@
   }
   
   .nav-links {
-    margin-bottom: 15px;
-    flex-direction: column;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
   }
   
   .logo {
@@ -124,8 +135,8 @@
   }
   
   .join-btn {
-    width: 100%;
-    margin-top: 15px;
+    width: auto; 
+    margin-top: 10px;
   }
   
   .dropdown-content {

@@ -27,20 +27,21 @@ const Navbar = () => {
           About Us
         </Link>
 
-        <div className="dropdown">
-          <a 
-            href="/services" 
-            className={`nav-item ${activeSection === "services" ? "active" : ""}`} 
-            onClick={() => setActiveSection("services")}
-          >
-            Services ▾
-          </a>
-          <div className="dropdown-content">
-            <a href="/services/service1">Service 1</a>
-            <a href="/services/service2">Service 2</a>
-            <a href="/services/service3">Service 3</a>
-          </div>
-        </div>
+        <a 
+          href="/catalogue" 
+          className={`nav-item ${activeSection === "catalogue" ? "active" : ""}`} 
+          onClick={() => setActiveSection("catalogue")}
+        >
+          Book Catalogue
+        </a>
+
+        <a 
+          href="/contact" 
+          className={`nav-item ${activeSection === "contact" ? "active" : ""}`} 
+          onClick={() => setActiveSection("contact")}
+        >
+          Contact Us
+        </a>
       </div>
 
       <div className="logo">

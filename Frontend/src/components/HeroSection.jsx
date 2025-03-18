@@ -13,9 +13,8 @@ const HeroSection = () => {
           A seamless, beautifully crafted Library Management System that blends efficiency with elegance.
         </p>
         <div className="hero-buttons">
-          <button className="primary-btn">Learn More</button>
           <button className="secondary-btn">Sign Up</button>
-        </div>
+      </div>
       </div>
 
       {/* Added Image Container */}
